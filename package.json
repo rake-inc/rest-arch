@@ -21,10 +21,15 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+<<<<<<< HEAD
     "@types/node": "^6.0.88",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
     "ts-md5": "^1.2.2",
+=======
+    "core-js": "^2.4.1",
+    "rxjs": "^5.4.2",
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

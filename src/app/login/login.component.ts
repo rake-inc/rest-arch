@@ -3,12 +3,16 @@ import { User } from './user';
 import { NG_VALIDATORS, Validators, Validator, AbstractControl, ValidatorFn } from '@angular/forms';
 import {Http, Response, RequestOptions, Headers} from '@angular/http';
 import 'rxjs';
+<<<<<<< HEAD
 import {Md5} from 'ts-md5/dist/md5';
+=======
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
 @Component({
 
 	moduleId:module.id,
   selector: 'app-login',
   templateUrl: './login.component.html',
+<<<<<<< HEAD
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
@@ -16,12 +20,23 @@ export class LoginComponent {
 model = new User('','','',null,'','');
 
 // const body = {name: };
+=======
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent {
+
+model = new User('','',null,'','','');
+
+
+
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
 submitted = false;
 constructor(private http: Http)
 {
 
 }
 
+<<<<<<< HEAD
 // JSON.stringify(this.model)
 
 onSubmit(){ 
@@ -52,6 +67,15 @@ onSubmit(){
               console.log(JSON.stringify(error.json()));
           }
           );
+=======
+onSubmit(){ 
+
+		this.submitted=true;
+		console.log(this.model);
+		this.http
+  		.post('http://192.168.43.175:8000/accounts/api/signup', JSON.stringify(this.model))
+  		.subscribe();
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
   
 	}
 

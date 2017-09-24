@@ -2,6 +2,7 @@
 	<h4>SignUp Form </h4>
 	<form (ngSubmit)="onSubmit()" #loginForm="ngForm">
 		<div class="form-group">
+<<<<<<< HEAD
 			<label for="firstname">First Name</label>
 			<input type="text" class="form-control" id="firstname" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="model.firstname" name="firstname" #firstname="ngModel">
 			<div [hidden]="firstname.valid || firstname.pristine" class="alert alert-danger">
@@ -9,11 +10,21 @@
 					Name Is Required
 				</div>
 				<div [hidden]="!firstname.hasError('pattern')">
+=======
+			<label for="name">Name</label>
+			<input type="text" class="form-control" id="name" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="model.name" name="name" #name="ngModel">
+			<div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+				<div [hidden]="!name.hasError('required')">
+					Name Is Required
+				</div>
+				<div [hidden]="!name.hasError('pattern')">
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
 					Name Only Has Alphabets!!
 				</div>
 			</div>	
 		</div>
 		<div class="form-group">
+<<<<<<< HEAD
 			<label for="firstname">Last Name</label>
 			<input type="text" class="form-control" id="lastname" required pattern="[a-zA-Z][a-zA-Z ]+" [(ngModel)]="model.lastname" name="lastname" #lastname="ngModel">
 			<div [hidden]="lastname.valid || lastname.pristine" class="alert alert-danger">
@@ -27,6 +38,9 @@
 		</div>
 		<div class="form-group">
 			<label for="firstname">Email Address</label>
+=======
+			<label for="name">Email Address</label>
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
 			<input type="text" class="form-control" id="emailaddress" required [(ngModel)]="model.email" name="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" #email="ngModel">
 			<div [hidden]="email.valid || email.pristine"
             class="alert alert-danger">
@@ -39,7 +53,11 @@
 			</div>
 		</div>
 		<div class="form-group">
+<<<<<<< HEAD
 			<label for="firstname">Mobile Number</label>
+=======
+			<label for="name">Mobile Number</label>
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
 			<input type="text" class="form-control" id="mobilenumber" required [(ngModel)]="model.mobile"
 			name="mobilenumber" pattern="[0-9]*" minlength="10" maxlength="10" #mobile="ngModel" >
 			<div [hidden]=" mobile.valid || mobile.pristine"
@@ -57,7 +75,11 @@
 		</div>
 
 		<div class="form-group">
+<<<<<<< HEAD
 			<label for="firstname">Password</label>
+=======
+			<label for="name">Password</label>
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
 			<input type="password" class="form-control" id="password" required [(ngModel)]="model.password" name="password" #password="ngModel">
 			<div [hidden]=" password.valid || password.pristine"
             class="alert alert-danger">
@@ -65,7 +87,11 @@
         	</div>
 		</div>
 		<div class="form-group">
+<<<<<<< HEAD
 			<label for="firstname">Confirm Password</label>
+=======
+			<label for="name">Confirm Password</label>
+>>>>>>> 34bf2ec2de4e6b1b88b7b42737bfc9f4300fa22c
 			<input type="password" class="form-control" id="confirmPassword"
 			required  validateEqual="password" [(ngModel)]="model.confirmPassword" name="confirmPassword" #confirmPassword="ngModel" >
 			<div [hidden]=" confirmPassword.valid || confirmPassword.pristine "
